@@ -60,8 +60,4 @@ Boolean : 1 byte allocated
 	go : 
 	its fast,statically typed, compiled lang that feels like a dynamically typed, interpreted lang 
 
-
-
-
-
 */
