@@ -6,7 +6,9 @@ import (
 )
 
 func main() {
-
+	fmt.Println((190)>>2)
+	fmt.Println(100 & 90)
+	fmt.Println(100 | 90)
 	var name string 
 	var age int
 	fmt.Print("Enter your name and age")
