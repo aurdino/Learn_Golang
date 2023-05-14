@@ -38,5 +38,4 @@ func main() {
 	fmt.Printf("type of %v is %T", a, a)
 	fmt.Printf("Type of %v is %T", b,b)
 	fmt.Printf("Type : %v \n", reflect.TypeOf(10))
-
 }
