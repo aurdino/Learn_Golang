@@ -112,11 +112,7 @@ func main () {
 	fmt.Println("sl4 : ", sl4)
 
 	sl5 := []int{}
-
 	sl6 := append(sl5, 1,2,3,4)
 	fmt.Println("sl6 : ", sl6)
-
-
-
 
 }
