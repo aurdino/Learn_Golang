@@ -36,6 +36,44 @@ func modifyMap(m map[string]int) {
 	m["One"] = 2
 }
 
+/*
+func modify(numbers *[3]int) {
+        for i := range numbers {
+                numbers[i] -= 5
+        }
+}
+func main() {
+        arr := [3]int{10, 20, 30}
+        fmt.Println(arr) 
+        modify(arr) //error this should be modify(&arr)
+        fmt.Println(arr)
+}
+
+prog2 : 
+func modify(numbers *[3]int) {
+        for i := range numbers {
+                numbers[i] -= 5
+        }
+}
+func main() {
+        arr := [3]int{10, 20, 30}
+        fmt.Println(arr)
+        modify(arr)
+        fmt.Println(arr)
+}
+
+prog3 :
+func calcSquare(numbers []int) ([]int, bool) {
+        squares := []int{}
+        for _, v := range numbers {
+                squares = append(squares, v*v)
+        }
+        return squares, true  //[100 400 225] true
+
+}
+
+*/
+
 func main() {
 	a := 10 
 	fmt.Println("a : ", a)
