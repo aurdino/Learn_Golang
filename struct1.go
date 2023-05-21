@@ -15,6 +15,30 @@ type Movie struct {
 	rating float32
 }
 
+type Vertex struct {
+	X, Y int
+}
+
+var (
+	v1 = Vertex{1, 2}  // has type Vertex
+	v2 = Vertex{X: 1}  // Y:0 is implicit
+	v3 = Vertex{}      // X:0 and Y:0
+	p  = &Vertex{1, 2} // has type *Vertex
+)
+
+type Student struct {
+	name string
+	course string 
+	age int 
+	address string 
+}
+var (
+	s_1 = Student{"Vishal","CSE",26,"Siwan"}
+	s_2 = Student{course:"CSE", age:26}
+	s_3 = Student{}
+)
+
+
 func getMovie(s string, r float32) (m Movie) {
 	m = Movie{
 			name:   s,
@@ -39,6 +63,8 @@ func main() {
 	if st1 == st2 { //cannot compare two struct
 		fmt.Println("matched")
 	}*/
+	fmt.Println(s_1, s_2, s_3)
+	fmt.Println(v1, p, v2, v3)
 
 	s := s1{x: 5}
 	s2 := s1{x: 6}
