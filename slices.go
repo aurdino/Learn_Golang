@@ -27,7 +27,30 @@ The following expression creates a slice which includes elements 1 through 3 of 
 a[1:4]
 */
 
+
+
 func main () {
+
+	//slice literals
+	q := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println(q)
+
+	r := []bool{true, false, true, true, false, true}
+	fmt.Println(r)
+
+	s_1 := []struct {
+		i int
+		b bool
+	}{
+		{2, true},
+		{3, false},
+		{5, true},
+		{7, true},
+		{11, false},
+		{13, true},
+	}
+	fmt.Println(s_1)
+
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 
 	var s []int = primes[1:4]   //4 is not included ie high is not included

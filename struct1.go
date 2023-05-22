@@ -32,6 +32,7 @@ type Student struct {
 	age int 
 	address string 
 }
+//struct literals
 var (
 	s_1 = Student{"Vishal","CSE",26,"Siwan"}
 	s_2 = Student{course:"CSE", age:26}
@@ -51,8 +52,19 @@ func increaseRating(m *Movie) {
 	m.rating += 1.0
 }
 
+//struct to pointer
+type Student1 struct {
+	name string
+	course string
+}
+
 
 func main() {
+
+	st := Student1{"Vishal","CSE"}
+	fmt.Println(st.name)
+	stptr := &st
+	fmt.Println(stptr,"\n",*stptr)
 	/*mov := getMovie("xyz", 2.0)
 	increaseRating(mov)
 	fmt.Printf("%+v", mov) //error

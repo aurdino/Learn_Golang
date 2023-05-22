@@ -12,7 +12,20 @@ import "fmt"
 	length
 	capacity
 */
+//sum of array
+func sumArray(ar [10]int) int {
+	
+	sm := 0
+	
+	for _, num := range ar {
+        sm += num
+    }
+	return sm
+}
+
 func main() {
+	ar :=  [10]int{1,2,3,4,5}
+	fmt.Println("sm: ",sumArray(ar))
 	var grades [10]int
 	fmt.Println(grades)
 
